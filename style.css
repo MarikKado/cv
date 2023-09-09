@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 10vh;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -128,6 +129,7 @@ body {
     font-weight: 300;
     text-decoration: none;
 }
+
 .education h5 {
     color: #03a9f4;
     font-weight: 500;
@@ -208,8 +210,8 @@ p {
     color: #2a7da2;
     font-size: 16px;
 }
-/* 26:50 */
-.aboutSkills .box { 
+
+.aboutSkills .box {
     position: relative;
     width: 100%;
     display: grid;
@@ -239,12 +241,20 @@ p {
     background: #03a9f4;
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #003147;
+    color: #f0f0f0;
+}
+
 .interest ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0;
 }
+
 .fa {
     color: #03a9f4;
     font-size: 18px;
@@ -254,23 +264,28 @@ p {
 @media (max-width: 1000px) {
     .container {
         margin: 10px;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .interest ul {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 600px) {
     .box {
         flex-direction: column;
     }
+
     .year {
         margin-bottom: 5px;
     }
+
     .interest ul {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .box {
-        grid-template-columns: repeat(1,1fr)
+        grid-template-columns: repeat(1, 1fr)
     }
 }
